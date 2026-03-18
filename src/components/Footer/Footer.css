@@ -1,0 +1,50 @@
+
+.footer-btn3  {
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  display: inline-block;
+  transition: all 0.4s;
+
+  /* Main purple background */
+  background: #742092;
+
+  border-radius: 80px;
+  padding: 17px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover state */
+.footer-btn3 :hover {
+  color: #fff;
+  background: #ff7526; /* switch to orange */
+}
+
+/* Circle effect */
+.footer-btn3::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+
+  /* soft orange circle */
+  background: #ff9a5c;
+
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+}
+
+/* Expand animation on hover */
+.footer-btn3:hover::after {
+  width: 94%;
+  border-radius: 80px;
+
+  /* light purple overlay */
+  background: #a855f7;
+}
