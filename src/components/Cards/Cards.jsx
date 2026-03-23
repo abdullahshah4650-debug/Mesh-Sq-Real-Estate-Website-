@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // import AOS CSS
 import "./Cards.css";
-import ScrollReveal from "../Onscroll";
+
 const data = [
   {
     id: 1,
@@ -29,48 +31,74 @@ const data = [
 ];
 
 export default function Cards() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out",
+      once: false,
+      mirror: true,
+      offset: 100,
+      anchorPlacement: "top-center",
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <ScrollReveal>
-      <div className="w-full bg-white pt-0 pb-10 px-7 md:px-16">
-        <div className="  mx-auto  rounded-[64px] bg-[#ff7526] w-80 text-center">
-          <h2 className="text-white font-light text-2xl  leading-none inline-block py-2 font-['Plus_Jakarta_Sans']">
-            Our Fundamental Principles
-          </h2>
-        </div>
-
-        <h2 className="text-3xl text-[#742092] md:text-4xl font-bold mt-5 text-center">
-          Follow Simple Steps To Buy Property
+    <div
+      data-aos="fade-up"
+      className="w-full bg-white pt-0  sm:pb-8 md:pb-10 px-4 sm:px-7 md:px-16"
+    >
+      {/* Badge */}
+      <div className="mx-auto rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] w-full sm:w-72 md:w-80 text-center px-4 sm:px-6">
+        <h2 className="text-white font-light text-base sm:text-lg md:text-2xl leading-none inline-block py-2 font-['Plus_Jakarta_Sans']">
+          Our Fundamental Principles
         </h2>
-
-        <div className="grid grid-cols-4 gap-8 mt-30">
-          {data.map((item) => (
-            <div
-              key={item.id}
-              className={`relative bg-gray-100  rounded-xl pt-20 pb-10 px-4 text-center group hover:shadow-lg transition w-70 h-50 mx-auto ${
-                item.id % 2 === 1 ? "translate-y-0" : "translate-y-12"
-              }`}
-            >
-              <div className=" absolute -top-16 left-1/2 -translate-x-1/2">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-32 h-32 rounded-full object-cover border-4 border-white transition duration-500 group-hover:-rotate-12"
-                />
-
-                <div className="absolute flip-number -right-2 top-2 bg-[#ff7526] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
-                  {String(item.id).padStart(2, "0")}
-                </div>
-              </div>
-
-              <h3 className="text-lg font-semibold mt-4 group-hover:text-[#742092] transition">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-500 text-sm mt-2">{item.text}</p>
-            </div>
-          ))}
-        </div>
       </div>
-    </ScrollReveal>
+
+      {/* Main Heading */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#742092] font-bold pt-4 sm:pt-5 pb-6 md:pb-10 text-center px-2">
+        Follow Simple Steps To Buy Property
+      </h2>
+
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 sm:gap-8 md:gap-8 mt-8 sm:mt-10 md:mt-12">
+        {data.map((item) => (
+          <div
+            key={item.id}
+            data-aos="fade-up"
+            data-aos-delay={item.id * 100}
+            className={`relative bg-transparent sm:bg-gray-100 rounded-lg sm:rounded-xl pt-20 sm:pt-20 pb-8 sm:pb-10 px-3 sm:px-4 text-center group hover:shadow-lg transition w-full sm:w-auto mx-auto mb-4 sm:mb-0 ${
+              item.id % 2 === 1
+                ? "translate-y-0"
+                : "translate-y-0 sm:translate-y-12"
+            }`}
+          >
+            {/* Image Container */}
+            <div className="absolute -top-10 sm:-top-16 left-1/2 -translate-x-1/2">
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32 rounded-full object-cover border-4 border-white transition duration-500 group-hover:-rotate-12"
+              />
+
+              {/* Number Circle */}
+              <div className="absolute flip-number -right-2 top-2 bg-[#ff7526] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">
+                {String(item.id).padStart(2, "0")}
+              </div>
+            </div>
+
+            {/* Title */}
+            <h3 className="text-base sm:text-lg font-semibold group-hover:text-[#742092] transition">
+              {item.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-gray-500 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed">
+              {item.text}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
