@@ -37,7 +37,7 @@ const Legacy = () => {
       </section>
 
       {/* Full Width Image */}
-      <img className="w-full" src="/house.png" alt="Legacy Image" />
+      <img className="md:w-full lg:w-full sm:w-330" src="/house.png" alt="Legacy Image" />
     </>
   );
 };

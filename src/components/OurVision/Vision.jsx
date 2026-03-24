@@ -16,7 +16,7 @@ const Vision = () => {
   }, []);
 
   return (
-    <section className="w-full sm:w-350 mx-auto pt-8 sm:pt-12 md:pt-0 pb-6 sm:pb-8 md:pb-10 px-4 sm:px-6">
+    <section id="About us" className="w-full sm:w-350 mx-auto pt-8 sm:pt-12 md:pt-0 pb-6 sm:pb-8 md:pb-10 px-4 sm:px-6">
       {/* Heading */}
       <div
         data-aos="fade-up"

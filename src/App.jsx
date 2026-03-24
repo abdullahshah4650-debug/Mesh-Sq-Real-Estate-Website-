@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Properties from "./components/Properties/Properties";
 import Legacy from "./components/Legacy/Legacy";
 import Cards from "./components/Cards/Cards";
+import ComingSoon from "./components/Commingsoon";
 import Vision from "./components/OurVision/Vision";
 import Projects from "./components/Ourprojects/Projects";
 
@@ -12,11 +13,16 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Properties />
       <Cards />
       <Projects />
+
       <Vision />
       <Legacy />
+   
+        <ComingSoon />
+      
       <Footer />
     </>
   );

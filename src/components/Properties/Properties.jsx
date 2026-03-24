@@ -43,9 +43,9 @@ const Properties = () => {
           </div>
 
           {/* Video Content */}
-          <div className="w-full md:w-1/2 lg:w-130 mx-4 sm:mx-0 aspect-video">
+          <div className="w-full md:w-1/2 lg:w-130 md:mx-4 mx-0 aspect-video">
             <iframe
-              className="w-full h-full rounded-lg md:rounded-xl"
+              className="w-full h-full rounded-lg md:rounded-xl "
               src="https://www.youtube.com/embed/wml3u4OUjnM"
               title="Commercial Property Tour"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

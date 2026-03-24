@@ -17,7 +17,10 @@ import ScrollReveal from "../Onscroll";
 
 const Footer = () => {
   return (
-    <section id="aboutus" className="w-full min-h-screen py-4 sm:py-7 px-4 sm:px-5 relative">
+    <section
+      id="aboutus"
+      className="w-full min-h-screen py-4 sm:py-7 px-4 sm:px-5 relative"
+    >
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -66,7 +69,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
+            <div className="w-3"></div>
             {/* Gallery Grid */}
             <div className="w-full md:w-160 gallery flex flex-col gap-3 sm:gap-5">
               {/* Layer 1 */}
@@ -116,13 +119,13 @@ const Footer = () => {
             <div>
               <ul className="flex flex-col gap-2 md:gap-3">
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">Home</a>
+                  <a href="#">Home</a>
                 </li>
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">About Us</a>
+                  <a href="#About us">About Us</a>
                 </li>
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">Appartment</a>
+                  <a href="#property">Projects</a>
                 </li>
               </ul>
             </div>
@@ -131,13 +134,13 @@ const Footer = () => {
             <div>
               <ul className="flex flex-col gap-2 md:gap-3">
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">Gallery</a>
+                  <a href="#property">Gallery</a>
                 </li>
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">Blog</a>
+                  <a href="#soon">Blog</a>
                 </li>
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
-                  <a href="/">Contact Us</a>
+                  <a href="#aboutus">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -175,38 +178,37 @@ const Footer = () => {
           </div>
 
           {/* Mobile Layout - Vertical Stack */}
-        <div className="md:hidden flex flex-col items-center  gap-6">
+          <div className="md:hidden flex flex-col items-center  gap-6">
             {/* Logo */}
             <div className="w-28 mx-auto">
               <img className="w-full align-middle" src="/logo.png" alt="logo" />
             </div>
-
 
             {/* Nav Links */}
             <div className="flex gap-8 justify-center w-full max-w-55">
               <div>
                 <ul className="flex flex-col gap-2">
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">About Us</a>
+                    <a href="#About us">About Us</a>
                   </li>
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">Appartment</a>
+                    <a href="#property">Projects</a>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul className="flex flex-col gap-2">
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">Gallery</a>
+                    <a href="#property">Gallery</a>
                   </li>
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">Blog</a>
+                    <a href="#soon">Blog</a>
                   </li>
                   <li className="hover:text-[#742092] transition duration-100 ease-in text-xs">
-                    <a href="/">Contact Us</a>
+                    <a href="#aboutus">Contact Us</a>
                   </li>
                 </ul>
               </div>
