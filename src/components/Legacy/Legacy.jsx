@@ -3,15 +3,15 @@ const Legacy = () => {
   return (
     <section className="w-full px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20">
       {/* Badge */}
-      <div className="mx-auto rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] text-center px-6 py-3 sm:py-4 max-w-130">
-        <h2 className="text-white font-light text-base sm:text-lg md:text-xl lg:text-2xl leading-tight font-['Plus_Jakarta_Sans']">
-          BUILDING TOMORROW'S LANDMARKS
+      <div className="mx-auto rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] text-center px-6 py-3 sm:py-4 max-w-100">
+        <h2 className="text-white  font-light text-base sm:text-lg md:text-xl lg:text-2xl leading-tight font-['Plus_Jakarta_Sans']">
+          Building Tomorrow LandMark's
         </h2>
       </div>
 
       {/* Main Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#742092] font-bold mt-6 sm:mt-8 text-center max-w-225 mx-auto leading-tight">
-        THE LEGACY OF Mesh Sq
+      <h2 className="text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-[#742092] font-bold mt-6 sm:mt-8 text-center max-w-225 mx-auto leading-tight">
+        The Legacy Of Mesh Sq
       </h2>
 
       {/* Description */}
