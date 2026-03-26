@@ -47,7 +47,7 @@ export default function Cards() {
     <div className="w-full bg-white px-4 sm:px-7 md:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
       {/* Badge */}
       <div className="mx-auto rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] w-full sm:max-w-xs text-center px-4 sm:px-6 py-3">
-        <h2 className="text-white font-light text-base sm:text-lg md:text-2xl leading-tight font-['Plus_Jakarta_Sans']">
+        <h2 className="text-white lg:text-[20px] font-light text-base sm:text-lg md:text-2xl leading-tight font-['Plus_Jakarta_Sans']">
           Our Fundamental Principles
         </h2>
       </div>

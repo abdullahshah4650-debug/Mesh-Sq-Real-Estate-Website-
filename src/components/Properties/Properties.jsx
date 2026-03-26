@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "./Properties.css";
 import Cards from "../Cards/Cards";
 
 const Properties = () => {

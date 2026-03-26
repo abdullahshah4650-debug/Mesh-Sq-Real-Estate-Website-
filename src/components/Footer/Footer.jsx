@@ -471,7 +471,7 @@ const Footer = () => {
             </div>
 
             {/* Nav Links */}
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-10">
               <ul className="flex flex-col gap-2 md:gap-3">
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
                   <a href="#">Home</a>
