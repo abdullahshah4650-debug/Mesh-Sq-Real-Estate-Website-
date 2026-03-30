@@ -99,19 +99,19 @@ const Navbar = () => {
             {/* Desktop Links */}
             <div className="navlinks hidden lg:block">
               <ul className="flex flex-row space-x-4 xl:space-x-6">
-                <li>
-                  <a href="#home">Home</a>
+                <li className="hover:text-[#742092] transition duration-300">
+                  <a href="#">Home</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#About us">About Us</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#property">Projects</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#soon">Blog</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#aboutus">Contact Us</a>
                 </li>
               </ul>
@@ -147,19 +147,19 @@ const Navbar = () => {
           {mobileMenuOpen && (
             <div className="lg:hidden absolute top-20 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 z-40">
               <ul className="flex flex-col space-y-3">
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#home">Home</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#About us">About Us</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#property">Projects</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#soon">Blog</a>
                 </li>
-                <li>
+                <li className="hover:text-[#742092] transition duration-300">
                   <a href="#aboutus">Contact Us</a>
                 </li>
               </ul>

@@ -23,7 +23,7 @@ const Vision = () => {
       {/* Heading */}
       <div
         data-aos="fade-up"
-        className="mx-auto mb-8 sm:mb-10 md:mb-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] text-center px-6 py-3 max-w-60"
+        className="mx-auto mb-8 sm:mb-10 md:mb-12 w-fit rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] text-center px-6 py-3"
       >
         <h2 className="text-white font-light text-base sm:text-lg md:text-2xl lg:text-[20px] leading-tight font-['Plus_Jakarta_Sans']">
           Our Mission

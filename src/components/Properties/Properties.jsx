@@ -8,8 +8,8 @@ const Properties = () => {
     <>
       <section className="w-full mx-auto py-10 sm:py-16 md:py-20 lg:py-28 px-4 sm:px-6 md:px-10 lg:px-16">
         {/* Badge */}
-        <div className="mx-auto rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-[#ff7526] w-full max-w-70 sm:max-w-110 md:max-w-110 text-center">
-          <h2 className="text-white font-light text-sm sm:text-base md:text-lg lg:text-xl py-2 px-4 ">
+        <div className="mx-auto w-fit rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-[#ff7526] text-center px-4 py-2">
+          <h2 className="whitespace-nowrap text-white font-light text-sm sm:text-base md:text-lg lg:text-xl">
             Turning imagination into iconic realities
           </h2>
         </div>
