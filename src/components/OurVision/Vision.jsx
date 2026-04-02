@@ -20,7 +20,6 @@ const Vision = () => {
       id="About us"
       className="w-full px-4 sm:px-6 lg:px-12 py-10 sm:py-14 lg:py-20 overflow-hidden"
     >
-      {/* Heading */}
       <div
         data-aos="fade-up"
         className="mx-auto mb-8 sm:mb-10 md:mb-12 w-fit rounded-2xl sm:rounded-3xl md:rounded-[64px] bg-[#ff7526] text-center px-6 py-3"
@@ -30,9 +29,7 @@ const Vision = () => {
         </h2>
       </div>
 
-      {/* Content */}
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
-        {/* Left Text */}
         <div
           data-aos="fade-right"
           className="w-full lg:w-1/2 max-w-2xl text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed"
@@ -58,7 +55,6 @@ const Vision = () => {
           </p>
         </div>
 
-        {/* Right Image */}
         <div data-aos="fade-left" className="w-full lg:w-1/2 max-w-xl">
           <img
             className="w-full h-auto rounded-lg sm:rounded-2xl object-cover shadow-lg"

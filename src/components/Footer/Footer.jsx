@@ -19,7 +19,6 @@ import {
 import "./Footer.css";
 
 const Footer = () => {
-  // ✅ Form state
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -40,12 +39,9 @@ const Footer = () => {
     AOS.refresh();
   }, []);
 
-  // Handle input
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  // Validate form
   const validate = () => {
     let errs = {};
 
@@ -72,21 +68,16 @@ const Footer = () => {
 
   return (
     <section id="aboutus" className="w-full py-4 sm:py-7 px-4 sm:px-5 relative">
-      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url(../footer-bg1.png)" }}
       ></div>
       <div className="absolute inset-0 bg-black/40"></div>
-
-      {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto pt-8 sm:pt-16 md:pt-20">
-        {/* Contact Form & Gallery */}
         <div
           data-aos="fade-up"
           className="flex flex-col md:flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6"
         >
-          {/* Contact Form */}
           <div className="w-full md:w-full lg:w-160 bg-white rounded-lg sm:rounded-2xl px-4 sm:px-6 md:px-7 py-6 sm:py-7 flex flex-col">
             <h2 className="text-xl sm:text-2xl text-[#ff7526] font-bold">
               Send Us A Message
@@ -153,10 +144,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Spacer */}
           <div className="w-full h-3 lg:w-3"></div>
-
-          {/* Gallery */}
           <div className="w-full md:w-full lg:w-160 gallery flex flex-col gap-3 sm:gap-5">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
               <img
@@ -185,20 +173,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Spacing */}
         <div className="h-6 sm:h-8 md:h-10 lg:h-12"></div>
-
-        {/* Footer Info Section */}
         <div className="py-6 sm:py-8 md:py-8 lg:py-10 px-4 sm:px-8 md:px-10 lg:px-15 bg-white rounded-2xl md:rounded-2xl lg:rounded-3xl">
-          {/* Desktop Layout */}
           <div className="hidden md:flex lg:flex flex-row justify-between items-center flex-wrap gap-4">
-            {/* Logo */}
             <div className="w-32 md:w-36 lg:w-40">
               <img className="w-full align-middle" src="/logo.png" alt="logo" />
             </div>
-
-            {/* Nav Links */}
             <div className="flex flex-col md:flex-row gap-10">
               <ul className="flex flex-col gap-2 md:gap-3">
                 <li className="hover:text-[#742092] transition duration-100 ease-in text-sm md:text-base">
@@ -224,8 +204,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
-            {/* Location & Phone */}
             <div className="flex flex-col gap-2 md:gap-3">
               <div className="flex space-x-2 text-black hover:text-[#742092] transition duration-100 ease-in-out">
                 <FaLocationDot className="text-lg md:text-xl shrink-0 mt-0.5" />
@@ -238,8 +216,6 @@ const Footer = () => {
                 <p className="text-xs md:text-sm">(844) 440-MESH</p>
               </div>
             </div>
-
-            {/* Social Icons */}
             <div className="flex space-x-3 md:space-x-4 lg:space-x-6">
               <button className="bg-[#E6E8E7] text-[#742092] rounded-full p-2 md:p-3 hover:bg-[#742092] hover:text-white flex items-center justify-center w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12">
                 <FaFacebookF size={16} />
@@ -255,15 +231,10 @@ const Footer = () => {
               </button>
             </div>
           </div>
-
-          {/* Mobile & Tablet Layout */}
           <div className="flex flex-col md:hidden lg:hidden items-center gap-6">
-            {/* Logo */}
             <div className="w-28 mx-auto">
               <img className="w-full align-middle" src="/logo.png" alt="logo" />
             </div>
-
-            {/* Nav Links */}
             <div className="flex gap-8 justify-center w-full max-w-55">
               <div>
                 <ul className="flex flex-col gap-2">
@@ -292,8 +263,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-            {/* Contact Info */}
             <div className="flex flex-col gap-2">
               <div className="flex space-x-2 text-black hover:text-[#742092] transition duration-100 ease-in-out">
                 <FaLocationDot className="text-sm shrink-0 mt-0.5" />
@@ -304,8 +273,6 @@ const Footer = () => {
                 <p className="text-xs">(844) 440-MESH</p>
               </div>
             </div>
-
-            {/* Social Icons */}
             <div className="flex space-x-3">
               <button className="bg-[#E6E8E7] text-[#742092] rounded-full p-2 hover:bg-[#742092] hover:text-white flex items-center justify-center w-9 h-9">
                 <FaFacebookF size={14} />
@@ -321,11 +288,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-
-          {/* Divider */}
           <div className="h-8 sm:h-10 md:h-12 border-b border-[#E6E6E7] my-4 sm:my-6 md:my-6"></div>
-
-          {/* Copyright */}
           <div className="text-center">
             <h3 className="text-xs sm:text-sm md:text-base">
               © 2026 All Rights Reserved

@@ -13,20 +13,13 @@ const Properties = () => {
             Turning imagination into iconic realities
           </h2>
         </div>
-
-        {/* Main Heading */}
         <div className="mx-auto mb-8 sm:mb-10 md:mb-12 mt-4 sm:mt-6 max-w-[90%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl text-center">
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#742092] font-bold leading-tight">
             Designing Tomorrow's Landmarks Today
           </h3>
         </div>
-
-        {/* 🎬 Video Section (Improved) */}
         <div className="relative w-full max-w-5xl mx-auto group">
-          {/* Glow Background */}
           <div className="absolute -inset-2 bg-linear-to-r from-[#742092] to-[#ff7526] rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
-
-          {/* Video Container */}
           <div className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-2xl border border-white/20">
             <iframe
               className="w-full h-full"

@@ -128,13 +128,11 @@ export default function ComingSoon() {
                   className="w-full pl-12 pr-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-purple-400/50 focus:bg-white/10 transition-all duration-300"
                 />
               </div>
-              <button
-                type="submit"
-                className="px-6 py-3 bg-linear-to-r from-purple-500 via-violet-500 to-orange-400 hover:from-violet-500 hover:to-orange-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-purple-500/40"
-              >
-                Notify Me
-                <ArrowRight className="w-5 h-5" />
-              </button>
+              <div className="flex flex-row">
+                <button type="submit" className="header-btn3">
+                  Notify Me
+                </button>
+              </div>
             </form>
 
             {submitted && (

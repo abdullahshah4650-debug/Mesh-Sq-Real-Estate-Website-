@@ -20,7 +20,6 @@ const Navbar = () => {
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState("");
 
-  // ✅ AUTO HIDE MESSAGE
   useEffect(() => {
     if (message) {
       const timer = setTimeout(() => setMessage(""), 3000);
@@ -28,12 +27,9 @@ const Navbar = () => {
     }
   }, [message]);
 
-  // ✅ HANDLE INPUT
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  // ✅ VALIDATION
   const validate = (type) => {
     let errs = {};
 
@@ -67,14 +63,11 @@ const Navbar = () => {
 
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* 🔔 TOAST MESSAGE */}
       {message && (
         <div className="fixed top-5 right-5 bg-linear-to-r from-[#742092] to-[#ff7526] text-white px-6 py-4 rounded-xl shadow-lg animate-bounce z-999">
           {message}
         </div>
       )}
-
-      {/* Background Video */}
       <video
         autoPlay
         loop
@@ -89,14 +82,10 @@ const Navbar = () => {
 
       <div className="relative z-10">
         <div className="px-4 sm:px-6 md:px-10 lg:px-16 pt-4">
-          {/* Navbar */}
           <div className="navbar container max-w-330 w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-3 sm:py-4 items-center sticky top-0 z-50 rounded-2xl sm:rounded-full flex justify-between bg-white">
-            {/* Logo */}
             <div className="w-28 sm:w-32 md:w-40">
               <img className="w-full" src="/logo.png" alt="logo" />
             </div>
-
-            {/* Desktop Links */}
             <div className="navlinks hidden lg:block">
               <ul className="flex flex-row space-x-4 xl:space-x-6">
                 <li className="hover:text-[#742092] transition duration-300">
@@ -116,8 +105,6 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-
-            {/* Desktop Buttons */}
             <div className="hidden lg:flex space-x-3 xl:space-x-6">
               <button
                 onClick={() => setShowSignIn(true)}
@@ -133,8 +120,6 @@ const Navbar = () => {
                 Sign Up
               </button>
             </div>
-
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden text-2xl text-[#742092]"
@@ -142,8 +127,6 @@ const Navbar = () => {
               {mobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-
-          {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="lg:hidden absolute top-20 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 z-40">
               <ul className="flex flex-col space-y-3">
@@ -163,7 +146,6 @@ const Navbar = () => {
                   <a href="#aboutus">Contact Us</a>
                 </li>
               </ul>
-
               <div className="flex flex-col space-y-2 mt-4">
                 <button
                   onClick={() => {
@@ -188,8 +170,6 @@ const Navbar = () => {
             </div>
           )}
         </div>
-
-        {/* Hero (UNCHANGED) */}
         <div className="flex items-center justify-center text-center min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] px-4">
           <div className="max-w-2xl text-white">
             <div className="flex justify-center items-center space-x-2 mb-4">
@@ -213,8 +193,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* SIGN IN */}
       {showSignIn && (
         <div
           className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
@@ -268,8 +246,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
-      {/* SIGN UP */}
       {showSignUp && (
         <div
           className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
@@ -334,8 +310,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
-      {/* Animation */}
       <style>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: scale(0.95); }
