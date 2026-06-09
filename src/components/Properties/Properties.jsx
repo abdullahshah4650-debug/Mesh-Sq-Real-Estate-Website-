@@ -24,6 +24,7 @@ const Properties = () => {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/wml3u4OUjnM"
+              loading="lazy"
               title="Commercial Property Tour"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
