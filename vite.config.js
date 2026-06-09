@@ -5,7 +5,5 @@ export default defineConfig({
     host: true,
   },
   plugins: [tailwindcss()],
-  build: {
-    outDir: "./docs",
-  },
+  base: "./",
 });
